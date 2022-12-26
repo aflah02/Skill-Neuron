@@ -131,7 +131,7 @@ dmypy.json
 
 # customize
 scripts/*
-data/*
+# data/*
 prune_structure/*
 script
 example/*
