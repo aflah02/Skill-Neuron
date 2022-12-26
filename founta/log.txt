@@ -1,0 +1,28 @@
+2022-12-26 12:31:42,948 - INFO - trainer - Namespace(bz=128, data_path='/home/aflah20082/Skill-Neuron/data/founta', device='cuda:0', early_stop=False, epoch=4, eval_every_step=2000, from_pretrained=False, load_backbone='', lr=0.001, model_type='RobertaPrompt', num_labels=2, prompt_size=16, random_seed=0, resume_from='', save_to='/home/aflah20082/Skill-Neuron/founta', task_type='founta', verb=[''])
+2022-12-26 12:31:42,949 - INFO - trainer - num_steps_per_dataset:
+2022-12-26 12:31:42,949 - INFO - trainer - 204
+2022-12-26 12:31:42,949 - INFO - trainer - total_steps:
+2022-12-26 12:31:42,949 - INFO - trainer - 816
+2022-12-26 12:31:42,949 - INFO - trainer - num_train_epochs:
+2022-12-26 12:31:42,949 - INFO - trainer - 4
+2022-12-26 12:33:23,812 - INFO - trainer - Namespace(bz=128, data_path='/home/aflah20082/Skill-Neuron/data/founta', device='cuda:0', early_stop=False, epoch=4, eval_every_step=2000, from_pretrained=False, load_backbone='', lr=0.001, model_type='RobertaPrompt', num_labels=2, prompt_size=16, random_seed=0, resume_from='', save_to='/home/aflah20082/Skill-Neuron/founta', task_type='founta', verb=[''])
+2022-12-26 12:33:23,812 - INFO - trainer - num_steps_per_dataset:
+2022-12-26 12:33:23,813 - INFO - trainer - 204
+2022-12-26 12:33:23,813 - INFO - trainer - total_steps:
+2022-12-26 12:33:23,813 - INFO - trainer - 816
+2022-12-26 12:33:23,813 - INFO - trainer - num_train_epochs:
+2022-12-26 12:33:23,813 - INFO - trainer - 4
+2022-12-26 12:34:59,507 - INFO - trainer - Namespace(bz=128, data_path='/home/aflah20082/Skill-Neuron/data/founta', device='cuda:0', early_stop=False, epoch=4, eval_every_step=2000, from_pretrained=False, load_backbone='', lr=0.001, model_type='RobertaPrompt', num_labels=2, prompt_size=16, random_seed=0, resume_from='', save_to='/home/aflah20082/Skill-Neuron/founta', task_type='founta', verb=[''])
+2022-12-26 12:34:59,508 - INFO - trainer - num_steps_per_dataset:
+2022-12-26 12:34:59,508 - INFO - trainer - 204
+2022-12-26 12:34:59,508 - INFO - trainer - total_steps:
+2022-12-26 12:34:59,508 - INFO - trainer - 816
+2022-12-26 12:34:59,508 - INFO - trainer - num_train_epochs:
+2022-12-26 12:34:59,508 - INFO - trainer - 4
+2022-12-26 12:36:09,489 - INFO - trainer - Namespace(bz=128, data_path='/home/aflah20082/Skill-Neuron/data/founta', device='cuda:0', early_stop=False, epoch=4, eval_every_step=2000, from_pretrained=False, load_backbone='', lr=0.001, model_type='RobertaPrompt', num_labels=2, prompt_size=16, random_seed=0, resume_from='', save_to='/home/aflah20082/Skill-Neuron/founta', task_type='founta', verb=[''])
+2022-12-26 12:36:09,490 - INFO - trainer - num_steps_per_dataset:
+2022-12-26 12:36:09,490 - INFO - trainer - 204
+2022-12-26 12:36:09,490 - INFO - trainer - total_steps:
+2022-12-26 12:36:09,490 - INFO - trainer - 816
+2022-12-26 12:36:09,490 - INFO - trainer - num_train_epochs:
+2022-12-26 12:36:09,490 - INFO - trainer - 4

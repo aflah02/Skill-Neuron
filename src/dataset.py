@@ -178,7 +178,7 @@ datasetRow = {
     "sst2":["sentence","label"],
     "tweets_hate":["tweet","label"],
     "virtue":["sentence1","sentence2","label"],
-    "founta":["full_text","label"]
+    "founta":["sentence","label"]
 }
 
 datasetLabel = {

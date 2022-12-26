@@ -47,6 +47,9 @@ class trainer:
     #training step
     def mlm_train_step(self,labeled_batch,return_length=False) -> torch.Tensor:
         """Perform a MLM training step."""
+        # print()
+        # print(labeled_batch)
+        # print()
         sentences = labeled_batch[datasetRow[self.args.task_type][0]]
         if(len(datasetRow[self.args.task_type]) > 2):
             sentences = [sentences[_] + labeled_batch[datasetRow[self.args.task_type][1]][_] for _ in range(len(sentences))]
