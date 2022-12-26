@@ -8,7 +8,7 @@ from tqdm import tqdm
 from torch.utils.data import Dataset
 from datasets import load_from_disk
 from torch.utils.data import random_split as split
-
+import pandas as pd
 
 class RawTextDataset(Dataset):
     def __init__(self, path):
@@ -98,6 +98,23 @@ class DbpediaSDataset(CsvDataset):
     def getsnt(self,text):
         return text[2]
 
+class FountaDataset(CsvDataset):
+    def __init__(self, path):
+        super().__init__(path)
+    def read(self, path):
+        df = pd.read_csv(path)
+        messages = df['full_text'].tolist()
+        labels = df['label'].tolist()
+        return [[messages[i],labels[i]] for i in range(len(messages))]
+    def getsnt(self,text):
+        return text[0]
+    def getlabel(self,text):
+        mapping = {
+            'normal':0,
+            'hateful':1
+        }
+        return mapping[text[1]]
+
 class EmptyDataset(RawTextDataset):
     def __init__(self,path):
         super().__init__(path)
@@ -133,6 +150,7 @@ datasetColumn = {
     "sst2":["train","validation"],
     "tweets_hate":["train"],
     "virtue":["train","validation","test"],
+    "founta":["train","validation","test"],
 }
 
 datasetRow = {
@@ -159,7 +177,8 @@ datasetRow = {
     "qqp":["question1","question2","label"],
     "sst2":["sentence","label"],
     "tweets_hate":["tweet","label"],
-    "virtue":["sentence1","sentence2","label"]
+    "virtue":["sentence1","sentence2","label"],
+    "founta":["full_text","label"]
 }
 
 datasetLabel = {
@@ -187,13 +206,16 @@ datasetLabel = {
     "sst2":2,
     "qqp":2,
     "tweets_hate":2,
-    "virtue":2
+    "virtue":2,
+    "founta":2
 }
 
 datasetType = {
     "dpbedia": DbpediaDataset,
     "dbpedia_s":DbpediaSDataset,
-    "empty":EmptyDataset
+    "empty":EmptyDataset,
+    "founta":FountaDataset
+
 }
 
 def getDataset(taskName,path):
